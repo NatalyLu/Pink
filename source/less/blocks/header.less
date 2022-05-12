@@ -1,0 +1,36 @@
+.header {
+  background-color: @dark-color;
+
+  @media (min-width: @tablet-width) {
+    background-image:
+      url('../../img/backgrounds/screen-tablet.png'),
+      url('../../img/backgrounds/hand-tablet.png'),
+      url('../../img/backgrounds/back-tablet.jpg');
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 195px 346px, 660px 545px, cover;
+    background-position: bottom 145px right 94px, bottom right, center top;
+    min-height: 462px;
+    margin-bottom: 30px;
+  }
+}
+
+.header__title {
+  margin: 0 auto;
+  max-width: 280px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    max-width: @tablet-width;
+    padding: 0 350px 0 50px;
+  }
+}
+
+.header__download {
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    max-width: @tablet-width;
+    padding: 0 320px 0 20px;
+  }
+}
