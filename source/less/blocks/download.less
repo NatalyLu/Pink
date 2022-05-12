@@ -1,0 +1,45 @@
+.download {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.download__button {
+  width: 100%;
+  text-decoration: none;
+  margin-bottom: 30px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 45px;
+  }
+}
+
+.download__list {
+  .drop-list-style;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 0 30px 0;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 38px;
+  }
+}
+
+.download__item {
+  display: flex;
+}
+
+.download__note {
+  display: inline-block;
+  margin: 0 0 30px 0;
+  font-family: "Opensans Light", "Arial", sans-serif;
+  line-height: 1.7rem;
+  color: @main-color;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 1.29rem;
+    margin-bottom: 110px;
+  }
+}
