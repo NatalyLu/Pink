@@ -16,6 +16,8 @@ let toggleMenu = (evt, button, nav) => {
 	button.setAttribute("aria-expanded", attributeValue);
 }
 
-burger.addEventListener("click", (evt) => {
-  toggleMenu(evt, burger, navigation);
-});
+if (burger) {
+	burger.addEventListener("click", (evt) => {
+		toggleMenu(evt, burger, navigation);
+	});
+}

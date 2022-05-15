@@ -12,6 +12,10 @@
     min-height: 462px;
     margin-bottom: 30px;
   }
+
+  @media (min-width: @desktop-width) {
+    background-position: bottom 145px right calc(50% - 194px), bottom right calc(50% - 55px), center bottom -150px;
+  }
 }
 
 .header__title {
@@ -20,8 +24,13 @@
   text-align: center;
 
   @media (min-width: @tablet-width) {
-    max-width: @tablet-width;
+    max-width: @small-box-width;
     padding: 0 350px 0 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: @big-box-width;
+    padding: 0 770px 0 120px;
   }
 }
 
@@ -30,7 +39,12 @@
   padding: 0 20px;
 
   @media (min-width: @tablet-width) {
-    max-width: @tablet-width;
+    max-width: @small-box-width;
     padding: 0 320px 0 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: @big-box-width;
+    padding: 0 770px 0 110px;
   }
 }
