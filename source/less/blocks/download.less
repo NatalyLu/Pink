@@ -12,22 +12,33 @@
   @media (min-width: @tablet-width) {
     margin-bottom: 45px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 70px;
+  }
 }
 
 .download__list {
   .drop-list-style;
-  display: flex;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 50px);
+  gap: 35px;
   align-items: center;
+  justify-content: center;
   margin: 0 0 30px 0;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 38px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 60px;
+  }
 }
 
 .download__item {
   display: flex;
+  justify-content: center;
 }
 
 .download__note {
@@ -41,5 +52,9 @@
   @media (min-width: @tablet-width) {
     font-size: 1.29rem;
     margin-bottom: 110px;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 130px;
   }
 }
